@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+input{
+  height: 30px;
+  width: 300px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-add{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-add:hover{
+  background-color: blueviolet;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-div{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.article{
+  display: flex;
+  flex-direction: row;
+  background-color: #80808022;
+  height: 50px;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.btn-remove{
+  background-color: red;
+  width: 80px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-sizing: border-box;
   color: white;
+  cursor: pointer;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-remove:hover{
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-stask{
+  margin: 30px 0;
 }
