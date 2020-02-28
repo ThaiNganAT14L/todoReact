@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Form from './form';
 import Stask from './stask';
 
 class App extends Component{
   constructor(props){
     super(props);
     this.state = {
+      leg: 0,
       stask:[
       ]
     }
@@ -20,9 +20,10 @@ class App extends Component{
     if(value !== ''){
       stasks.push({
         content:value,
-        id: stasks.length+1
+        id: this.state.leg+1
       })
       this.setState({
+        leg : this.state.leg+1,
         stask: stasks
       })
     }
